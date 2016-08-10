@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block main %}
+{%for log in logger%}
+New log: <br>
+Log name: {{log.logger_name}}<br>
+Log time: {{log.time}}<br>
+Log level: {{log.level}}<br>
+Log message: {{log.message}}<br>
+Log name: {{log.sender}}<br>
+<br>
+{%endfor%}
+{% endblock %}
